@@ -95,6 +95,10 @@ These 2 rules will be translated as follow by AT:
 
 This definition is ultimately injected in a `<style>` statement inside the `<head>` of the page.  The HTML container of the respective templates are then assigned the `CSS1` and `CSS2` classes.
 
+In some cases, for example  for CSS3 @font-face/@keyframes rules, if users do not want to have a prefix generated from Aria Template they can set `$prefix` as false in CSS Template and below is the snippet for the same.
+
+<script src='http://snippets.ariatemplates.com/snippets/github.com/ariatemplates/documentation-code/%VERSION%/snippets/templates/cssTemplates/CSSWithoutPrefix.tpl.css?noheader=true&lang=at&outdent=true' defer></script>
+
 Note that it is also possible to include a CSS template as dependency in a normal class, using the `$css` property.  This is mainly used when defining [custom widgets](widget_libraries).
 
 ## CSS Template code sample

@@ -86,6 +86,13 @@ nonavbar: true
 
 ### [Creating A Custom Widgets Library](creating_a_custom_widgets_library)
 
+## [Utilities](Utilities)
+### [The Aria Templates Utilities](the_aria_templates_utilities)
+* [File Upload](fileupload)
+* [Drag and Drop](dragdrop)
+* [Persistence](persistencestorage)
+* [Processing Indicator](processingindicator)
+
 ## Modules Layer - The Application Generator
 ### Concepts
 

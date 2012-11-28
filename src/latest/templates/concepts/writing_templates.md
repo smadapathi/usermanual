@@ -299,6 +299,7 @@ This example contains all the configuration properties currently available for s
 * **`bindRefreshTo`** specifies the values of the data model to which the referesh of the section is automatically bound. Bindings and automatic refreshes are key features of Aria Templates and are described in due details in [this article](refresh#section-automatic-refresh).
 * **`bindProcessingTo`** allows to display a loading indicator on top of a section depending on whether a certain value is true or false. Optionally, a **`processingLabel`** can be specified. Loading indicators are treated in [this article](interactions with the dom).
 * **`keyMap`** and **`tableNav`** allow to define section-specific keyboard shortcuts and table navigation options. Refer to [this article](keyboard_navigation) to learn more about keyboard navigation.
+* **`on`** allows to register browser events on a section with the callbacks. Events can be single or list of events.
 
 ### createView
 

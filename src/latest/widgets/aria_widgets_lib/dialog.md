@@ -65,3 +65,9 @@ It is possible to set the `movable` and `movableProxy` default properties at app
 Here's a movable dialog example with code:
 
 <iframe class='samples' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/%VERSION%/samples/widgets/dialog/movable/?skip=1' ></iframe>
+
+## Resizable dialog
+
+Resizable dialog allows users to resize the dialog by dragging any corners of the dialog. Dialogue resizing can be enabled by setting "resizable" property to true.
+<script src='http://snippets.ariatemplates.com/snippets/github.com/ariatemplates/documentation-code/%VERSION%/snippets/widgets/dialog/Snippet.tpl?tag=wgtDialogResize&lang=at&outdent=true' defer></script>
+<iframe class='samples' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/%VERSION%/samples/widgets/dialog/resizable/?skip=1' ></iframe>

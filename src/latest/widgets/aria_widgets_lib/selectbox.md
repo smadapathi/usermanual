@@ -11,3 +11,10 @@ The whole list of configuration parameters is available in [SelectBoxCfg bean](h
 
 ## Sample Usage
 <iframe class='samples' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/%VERSION%/samples/widgets/selectbox/?skip=1' ></iframe>
+
+## Bindable options
+
+Users can modify the options in SelectBox without refreshing the page by binding options as follows.
+
+<script src='http://snippets.ariatemplates.com/snippets/github.com/ariatemplates/documentation-code/%VERSION%/snippets/widgets/selectbox/Snippet.tpl?tag=wgtSelectBoxBinding&lang=at&outdent=true' defer></script>
+<iframe class='samples' src='http://snippets.ariatemplates.com/samples/github.com/ariatemplates/documentation-code/%VERSION%/samples/widgets/selectbox/bindoptions/?skip=1' ></iframe>

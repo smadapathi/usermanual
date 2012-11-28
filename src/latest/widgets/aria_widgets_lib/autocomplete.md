@@ -24,8 +24,9 @@ The whole list of configuration parameters is available in [AutocompleteCfg Bean
 
 ## Basic AutoComplete
 
-Label-Code Resource Handlers accepts an Array of suggestions described as Objects matching the [LC Resources Handler Bean](http://ariatemplates.com/api/#aria.resources.handlers.LCResourcesHandlerBean).
-Each of the item contains a pair of **label** and **code** where _label_ is the visible value, _code_ is what is stored internally in the Autocomplete or in the datamodel.
+Label-Code Resource Handlers accepts an Array of suggestions described as Objects matching the [LC Resources Handler Bean](http://ariatemplates.com/api/#aria.resources.handlers.LCResourcesHandlerBean:Suggestion). Alternatively, we can pass a [Configuartion Object](http://ariatemplates.com/api/#aria.resources.handlers.LCResourcesHandlerBean:Configuration) while instantiating LC Resource Handler which allows user to set their own `labelKey`, `codeKey`, `sortingMethod`, `codeExactMatch`, `threshold`. If no configuartion object is passed to LC Resource Handler, it will take `codeKey` as `code`, `labelKey` as `label` and the default sorting method as descending alphabeticall order.
+
+Each of the item contains a pair of **labelKey**(defined in configuartion object) and **codeKey**(defined in configuartion object) where _labelKey_ is the visible value, _codeKey_ is what is stored internally in the Autocomplete or in the datamodel.
 
 The resources for the Autocomplete in this samples are the nations that participated in the 1966 Football World Cup, start typing the name of a nation and you'll get a list of results.
 
