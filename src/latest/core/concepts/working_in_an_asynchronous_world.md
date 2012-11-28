@@ -74,6 +74,8 @@ An Aria Templates callback object is always composed of a combination of 3 diffe
 * **fn**: the function reference. It can be either a `string`, a direct reference (like `this.myMethod`), or an anonymous method using an in line declaration.
 * **scope**: (_optional_) the scope parameter. The object to which this parameter refers is going to be used by the framework as the scope (ie the `this`) inside the function specified with `fn`
 * **args**: (_optional_) an object containing all the named arguments you would like to give to the function defined with `fn`
+* **resIndex**: (_optional_) an integer to set the index of the result or event, -1 will remove result| event from the first position; 0 default behaviour, result|event will be the first argument; n will set the result|event in the nth position.
+* **apply**: (_optional_) a boolean value, to use Function.call or Function	.apply.
 
 
 Finally, because all the different types of objects that you can create with Aria Templates all inherit from [aria.core.JsObject](http://ariatemplates.com/api/#aria.core.JsObject), you transparently have access to a method called `$callback()` on every object instance that allows you to execute an Aria Templates callback object.
@@ -99,3 +101,11 @@ At this point of this article, this is what you need to remember, so write it do
 Each time you need to write a method inside one of your class that need, depends or involves any kind of asynchronous matter, think about adding an extra argument to your method: a **callback** one !<br />
 And don't forget to execute it when the async job is over using `this.$callback()`
 </blockquote>
+
+## Rest API calls
+
+Aria Templates allows users to make `GET`, `POST`,`PUT`,`DELETE`,`HEAD`,`TRACE`,`OPTIONS`,`CONNECT`,`PATCH` requests to a Restful server. The default method will be `GET` if request method is not defined. The following snippet demonstrates how to make an asynchronous request in Aria Templates.
+
+<script src='http://snippets.ariatemplates.com/snippets/github.com/ariatemplates/documentation-code/%VERSION%/snippets/core/asynchronous/Async.js?tag=sampleAsyncRequest&lang=javascript&outdent=true' defer></script>
+
+The whole list of configuration parameters is available in [Async Request](http://ariatemplates.com/api/##aria.core.CfgBeans:IOAsyncRequestCfg).
